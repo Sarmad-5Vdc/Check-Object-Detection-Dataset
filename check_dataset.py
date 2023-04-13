@@ -14,9 +14,9 @@ import shutil
 img_formats = ('.bmp', '.dng', '.jpeg', '.jpg', '.mpo', '.png', '.tif', '.tiff', '.webp', '.pfm')
 
 parser = argparse.ArgumentParser()
-parser.add_argument('--dataset_path', type=str, required=True, help='Absolute path to folder containing all the dataset')
-parser.add_argument('--img_move_path', type=str, required=True, help='Absolute path to folder where the images will be moved')
-parser.add_argument('--txt_move_path', type=str, help='Absolute path to folder where the labels will be moved')
+parser.add_argument('-d', '--dataset_path', type=str, required=True, help='Absolute path to folder containing all the dataset')
+parser.add_argument('-i', '--img_move_path', type=str, required=True, help='Absolute path to folder where the images will be moved')
+parser.add_argument('-t', '--txt_move_path', type=str, help='Absolute path to folder where the labels will be moved')
 
 args = parser.parse_args()
 img_move_dir = args.img_move_path
